@@ -1,0 +1,136 @@
+* {
+  font-family: Ubuntu;
+}
+
+body {
+  background: #F2F0F8;
+}
+
+input {
+  border: 1px solid #dfdfdf;
+  border-radius: 1.25rem;
+  width: 30vw;
+  font-size: 1rem;
+  text-align: center;
+}
+
+input:focus{
+  outline: none;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 80vw;
+  margin: 5vh auto;
+}
+
+.header-section {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: left;
+  margin-bottom: 15px;
+}
+
+.block {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  width: 100%;
+  margin: 0px auto 15px auto;
+  padding: 30px;
+  background: #FFFFFF;
+  border: 1px solid #dfdfdf;
+  border-radius: 1.25rem;
+  box-shadow: 0px 10px 30px -20px rgba(0,0,0,.3);
+}
+
+.action-container {
+  display: flex;
+  justify-content: space-evenly;
+  width: 100%;
+  margin-bottom: 15px;
+}
+
+.display {
+  display: flex;
+  font-size: 18px;
+  flex-direction: column;
+  background: #f9f9f9;
+  border: 1px solid #dfdfdf;
+  border-radius: 1.25rem;
+  height: 50vh;
+  justify-content: left;
+  padding: 15px;
+  margin: 5px 0px;
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  overflow-x: auto;
+}
+
+.display-item {
+  display: flex;
+  padding: 0px 15px;
+  flex-flow: column wrap;
+  margin-bottom: 40px;
+}
+
+[contentEditable="false"]:empty:not(:focus):before {
+  content: attr(data-text);
+  opacity: 0.6;
+}
+
+.text {
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+  margin-bottom: 5px;
+}
+
+.text-header {
+  font-size: 2rem;
+  font-weight: bold;
+  opacity: 0.8;
+}
+
+.text-sm {
+  font-size: 1rem;
+  font-weight: 400;
+  opacity: 0.5;
+}
+
+/* -----------------------------Buttons----------------------------- */
+
+.btnCustom {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.25rem;
+  opacity: 0.8;
+  height: 4rem;
+  width: 8rem;
+  border-radius: 1.25rem;
+  cursor: pointer;
+  border: 1px solid #dfdfdf;
+  border-radius: 1.25rem;
+  transition: 0.2s;
+}
+
+.btnCustom:hover {
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.disabled {
+  background: linear-gradient(0deg, #ddd, #fff);
+  opacity: 0.65;
+  cursor: no-drop;
+}
+
+label.custom-record:hover,
+label.custom-upload:hover {
+  opacity: 0.8;
+}
+
+/* -----------------------------Buttons End----------------------------- */
